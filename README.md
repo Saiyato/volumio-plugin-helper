@@ -46,3 +46,25 @@ Or, if you omit the optional zip file name (since it's the same as the plugin na
 ```
 sh volumio_install_zip_from_fork.sh balbuze music_service volspotconnect
 ```
+
+## Lazy installation of unsanctioned versions from a forked repo (might need to download/build modules; which takes time!)
+1. SSH into server
+```
+sudo wget -O volumio_install_from_fork.sh https://raw.githubusercontent.com/Saiyato/volumio-plugin-helper/master/volumio_install_from_fork.sh
+```
+This will download the installation script
+
+3. Execute the script (DO NOT USER sudo!) you've just downloaded
+
+Parameters:
+
+$1 = author
+
+$2 = category
+
+$3 = plugin name
+
+E.g. if you want to install volspotconnect:
+```
+sh volumio_install_from_fork.sh Saiyato user_interface rotaryencoder
+```
