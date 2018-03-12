@@ -1,3 +1,4 @@
+#!/bin/bash
 # Volumio installer (workaround for plugins/fixes not in the Volumio repo)
 # $1 = author; $2 = plugin name
 if [ ! -d /home/volumio/$2 ];
