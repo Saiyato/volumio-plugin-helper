@@ -36,9 +36,13 @@ $2 = category
 
 $3 = plugin name
 
-$4 = zip file name
+$4 = zip file name (optional, if it's omitted $3 is used)
 
 E.g. if you want to install volspotconnect:
 ```
 sh volumio_install_zip_from_fork.sh balbuze music_service volspotconnect volspotconnect
+```
+Or, if you omit the optional zip file name (since it's the same as the plugin name)
+```
+sh volumio_install_zip_from_fork.sh balbuze music_service volspotconnect
 ```
