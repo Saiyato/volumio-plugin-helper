@@ -15,4 +15,5 @@ E.g. if you want the kodi plugin by Saiyato:
 sh volumio_install_from_zip.sh Saiyato volumio-kodi-plugin
 ```
 
-You can use this install script for any plugin, just add $1 = author and $2 = repository.
+You can use this install script for any plugin (if they are hosted separately), just add $1 = author and $2 = repository.
+For example this script will not work (unless you alter it) for plugins hosted in a volumio-plugins collection.
