@@ -40,5 +40,5 @@ $4 = zip file name
 
 E.g. if you want to install volspotconnect:
 ```
-sh test.sh balbuze music_service volspotconnect volspotconnect
+sh volumio_install_zip_from_fork.sh balbuze music_service volspotconnect volspotconnect
 ```
