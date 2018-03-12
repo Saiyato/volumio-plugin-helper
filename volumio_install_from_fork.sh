@@ -4,7 +4,7 @@ mkdir /home/volumio/svn
 cd /home/volumio/svn
 
 echo "Install necessary packages..."
-sudo apt-get install -y subversion build-essentials
+sudo apt-get install -y subversion build-essential
 
 # $1 = author, $2 = category, $3 = plugin name
 echo "Downloading plugin from $1/volumio-plugins/plugins/$2/$3"
