@@ -8,6 +8,7 @@ Simple bash script to install plugins from repo's.
 sudo wget -O volumio_install_from_zip.sh https://raw.githubusercontent.com/Saiyato/volumio-plugin-helper/master/volumio_install_from_zip.sh
 ```
 This will download the installation script.
+
 3. Execute the script (DO NOT USE sudo!) you've just downloaded
 
 E.g. if you want the kodi plugin by Saiyato:
