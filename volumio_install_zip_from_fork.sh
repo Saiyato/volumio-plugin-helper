@@ -1,7 +1,7 @@
 # Volumio installer (workaround for plugins/fixes not in the Volumio repo) - download from forked repo
 # $1 = author; $2 = category, $3 = plugin name, $4 = zip filename (optional)
-${4:-$3}
-echo "Downloading " + $2 + "/" + $3
+${4:=$3}
+echo "Downloading $2/$3"
 if [ ! -d /home/volumio/$3 ];
 then
 	mkdir /home/volumio/$3
