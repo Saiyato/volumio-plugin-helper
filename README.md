@@ -64,7 +64,11 @@ $2 = category
 
 $3 = plugin name
 
-E.g. if you want to install volspotconnect:
+E.g. if you want to install the rotary encoder:
 ```
 sh volumio_install_from_fork.sh Saiyato user_interface rotaryencoder
+```
+Or Qobuz from the volumio repo
+```
+sh volumio_install_from_fork.sh volumio music_service qobuz
 ```
