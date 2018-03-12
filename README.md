@@ -28,10 +28,14 @@ This will download the installation script
 
 3. Execute the script (DO NOT USER sudo!) you've just downloaded
 
-Parameters
+Parameters:
+
 $1 = author
+
 $2 = category
+
 $3 = plugin name
+
 $4 = zip file name
 
 E.g. if you want to install volspotconnect:
