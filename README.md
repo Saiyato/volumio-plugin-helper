@@ -11,6 +11,12 @@ This will download the installation script.
 
 3. Execute the script (DO NOT USE sudo!) you've just downloaded
 
+Parameters:
+
+$1 = author
+
+$2 = plugin name (zipfile must have the same name)
+
 E.g. if you want the kodi plugin by Saiyato:
 ```
 sh volumio_install_from_zip.sh Saiyato volumio-kodi-plugin
