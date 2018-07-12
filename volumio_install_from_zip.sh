@@ -16,5 +16,6 @@ miniunzip -xo $2.zip
 rm $2.zip
 
 echo "Installing plugin..."
+npm i
 volumio plugin install
 echo "Plugin installed successfully!"
