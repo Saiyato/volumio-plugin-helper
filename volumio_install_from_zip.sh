@@ -9,6 +9,8 @@ else
 	mkdir /home/volumio/$2
 fi
 
+apt-get update && apt-get install subversion build-essential
+
 echo "Downloading and extracting zip file..."
 cd /home/volumio/$2
 wget -O $2.zip https://github.com/$1/$2/raw/master/$2.zip
