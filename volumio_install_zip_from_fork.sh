@@ -14,7 +14,13 @@ fi
 echo "Downloading and extracting zip file..."
 cd /home/volumio/$3
 
-wget -O $ZIPFILE.zip https://github.com/$1/volumio-plugins/raw/master/plugins/$2/$3/$ZIPFILE.zip
+URL=
+HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" ${URL})
+if [ $HTTP_CODE == "404" ] ; then
+    https://github.com/$1/volumio-plugins/raw/main/plugins/$2/$3/$ZIPFILE.zip
+fi
+
+wget -O $ZIPFILE.zip ${URL}
 miniunzip -xo $ZIPFILE.zip
 rm $ZIPFILE.zip
 

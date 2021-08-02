@@ -9,11 +9,20 @@ else
 	mkdir /home/volumio/$2
 fi
 
-apt-get update && apt-get install subversion build-essential
+apt-get update && apt-get install -f -y subversion build-essential
 
 echo "Downloading and extracting zip file..."
 cd /home/volumio/$2
-wget -O $2.zip https://github.com/$1/$2/raw/master/$2.zip
+
+# Fix new top-level branch reference (master > main)
+URL=https://github.com/$1/$2/raw/master/$2.zip
+HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" ${URL})
+if [ $HTTP_CODE == "404" ] ; then
+        URL=https://github.com/$1/$2/raw/main/$2.zip
+fi
+
+wget -O $2.zip ${URL}
+
 miniunzip -xo $2.zip
 rm $2.zip
 
