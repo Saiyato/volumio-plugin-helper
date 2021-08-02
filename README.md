@@ -5,7 +5,7 @@ Simple bash script to install plugins from repo's.
 1. SSH into server
 2. Execute the below command:
 ```
-sudo wget -O volumio_install_from_zip.sh https://raw.githubusercontent.com/Saiyato/volumio-plugin-helper/master/volumio_install_from_zip.sh && chmod +x volumio_install_from_zip.sh
+sudo wget -O volumio_install_from_zip.sh https://raw.githubusercontent.com/Saiyato/volumio-plugin-helper/master/volumio_install_from_zip.sh && sudo chmod +x volumio_install_from_zip.sh
 ```
 This will download the installation script.
 
@@ -29,7 +29,7 @@ For example this script will not work (unless you alter it) for plugins hosted i
 ## Lazy installation of unsanctioned versions from a forked repo using a zip
 1. SSH into server
 ```
-sudo wget -O volumio_install_zip_from_fork.sh https://raw.githubusercontent.com/Saiyato/volumio-plugin-helper/master/volumio_install_zip_from_fork.sh && chmod +x volumio_install_zip_from_fork.sh
+sudo wget -O volumio_install_zip_from_fork.sh https://raw.githubusercontent.com/Saiyato/volumio-plugin-helper/master/volumio_install_zip_from_fork.sh && sudo chmod +x volumio_install_zip_from_fork.sh
 ```
 This will download the installation script
 
