@@ -17,6 +17,8 @@ $1 = author
 
 $2 = plugin name (zipfile must have the same name)
 
+$3 = branch (will check if specified branch exists, otherwise it will fail; no time to add graceful catches)
+
 E.g. if you want the kodi plugin by Saiyato:
 ```
 ./volumio_install_from_zip.sh Saiyato volumio-kodi-plugin
